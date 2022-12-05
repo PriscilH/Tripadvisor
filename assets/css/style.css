@@ -26,6 +26,22 @@ h1 span {
     color: #ff5d5d;
 }
 
+h2, h3 {
+    font-size: 28px;
+}
+
+h2 {
+    line-height: 34px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+h3 {
+    line-height: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
 /* HEADER */
 header {
     height: 60px;
@@ -41,11 +57,26 @@ header img {
     width: 188px;
 }
 
+header img:hover {
+    cursor: pointer;
+}
+
 header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: TS-Reg;
+    font-family: "TS-Reg";
+}
+
+header nav div:hover {
+    background-color: rgb(227, 225, 225);
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+header nav div span:hover{
+    text-decoration: underline;
 }
 
 header nav div:not(:last-child) {
@@ -80,9 +111,12 @@ header button {
     font-family: "TS-Reg";
     font-size: 14px;
     margin: 14px 0px 20px;
-    
-
 }
+
+.container p u:hover {
+    cursor: pointer;
+}
+
 /* Navigation menu  */
 
 .navigation-menu {
@@ -100,6 +134,12 @@ header button {
     border-radius: 10px; 
     box-sizing: border-box;
     justify-content: space-between;
+}
+
+.navigation-menu div:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 
 /* Pictures */
@@ -162,4 +202,69 @@ header button {
 .line > div:first-child >div:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* DESCRIPTION */
+
+.description {
+    height: 420px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.description .col-1{
+    height: 100%;
+    width: 50%;
+}
+
+.description .col-2{
+    margin-top: 30px;
+    width: calc(50% - 120px);
+    margin-left: 120px;
+}
+
+.description .col-1 p {
+    color :#333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.description .col-2 div:first-child {
+    background-color: #ff5d5d;
+    height: 234px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.description .col-2 div:last-child {
+    background-image: url(../img/map.png);
+    height: 234px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.description .col-2 p, button {
+    margin-left: 10px;
+}
+
+.description .col-2 p {
+    margin-bottom: 20px;
+}
+
+.description button {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 20px;
 }
