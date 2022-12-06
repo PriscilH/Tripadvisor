@@ -42,6 +42,20 @@ h3 {
     margin-left: 10px;
 }
 
+h4 {
+    font-family: "TS-Reg";
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "TS-Med";
+    margin: 10px 0;
+}
 /* HEADER */
 header {
     height: 60px;
@@ -267,4 +281,90 @@ header button {
     outline: none;
     font-family: inherit;
     border-radius: 20px;
+}
+
+/* SECTION LES IMMANQUABLES */
+
+.immanquables {
+    margin-top: 45px;
+    display: flex;
+}
+
+.divertir {
+    height: 100%;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+}
+
+.immanquables .carrousel {
+    height: 100%;
+    width: calc(100% / 4 * 3);
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.divertir p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px 0;
+}
+
+/* CARROUSEL */
+
+.carrousel .col-carrousel {
+    height: 100%;
+    width: calc(100% / 3 - (40px / 3));
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.carrousel .col-carrousel:not(:last-child) {
+    margin-right: 20px;
+}
+
+.col-carrousel img  {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.carrousel .circle {
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrousel .circle i {
+    font-size: 20px;
+}
+
+.carrousel .col-carrousel > div:nth-child(2) i {
+    margin-right: 1px;
+    color: rgb(4, 169, 108);
+    font-size: 12px;
+}
+
+.carrousel .col-carrousel > div:nth-child(2) span {
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "TS-Reg";
+    color: #333333;
+    margin-left: 5px;
+}
+
+.carrousel .col-carrousel p {
+    line-height: 17px;
+    color: #333333;
 }
