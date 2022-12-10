@@ -37,9 +37,6 @@ h2, h3 {
     margin-top: 25px;
 }
 
-h2 {
-    margin-top: 40px;
-}
 
 h3 {
     line-height: 35px;
@@ -444,6 +441,9 @@ header .container > i {
     }
     .description .col-2 div:last-child{
         height: 274px;
+    }
+    .titleP h2 {
+       margin-top: 150px;
     }
 }
 
