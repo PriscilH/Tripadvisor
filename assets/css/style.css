@@ -427,6 +427,9 @@ header .container > i {
     .description {
        flex-direction: column;
     }
+    .description .col-1 p br{
+        display: none;
+    }
     .description .col-1,
     .description .col-2 {
         width: 100%;
@@ -444,6 +447,16 @@ header .container > i {
     }
     .titleP h2 {
        margin-top: 150px;
+    }
+    .description .col-2 div:first-child {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px ;
+    }
+    .description .col-2 div:last-child {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 20px; 
+        border-top-right-radius: 20px;  
     }
 }
 
@@ -465,4 +478,24 @@ header .container > i {
     .no-padding {
         padding: 0px;
     }
+    .description .col-2{
+        flex-direction: column;
+    }
+    .description .col-2 div:last-child,
+    .description .col-2 div:first-child {
+        width: 100%;
+    }
+    .titleP h2 {
+        margin-top: 440px;
+     }
+     .description .col-2 div:first-child {
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+         border-bottom-left-radius: 0px ;
+     }
+     .description .col-2 div:last-child {
+         border-bottom-left-radius: 20px;
+         border-bottom-right-radius: 20px; 
+         border-top-right-radius: 0px;  
+     }
 }
